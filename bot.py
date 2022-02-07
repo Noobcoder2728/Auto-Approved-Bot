@@ -17,12 +17,13 @@ APPROVED = os.environ.get("APPROVED_WELCOME", "on").lower()
 async def start(client: pr0fess0r_99, message: Message):
     approvedbot = await client.get_me() 
     button=[[
-      InlineKeyboardButton("📦 Repo", url="https://github.com/PR0FESS0R-99/Auto-Approved-Bot"),
-      InlineKeyboardButton("Updates 📢", url="t.me/Mo_Tech_YT")
+      InlineKeyboardButton("Updates 📢", url="https://t.me/No1_Bots")
       ],[
-      InlineKeyboardButton("➕️ Add Me To Your Chat ➕️", url=f"http://t.me/{approvedbot.username}?startgroup=botstart")
+      InlineKeyboardButton("Support Group", url=f"https://t.me/No1_Bots_SupportGroup")
       ]]
-    await message.reply_text(text="**__Hello Iam Auto Approved Join Request Bot Repo https://github.com/PR0FESS0R-99/Auto-Approved-Bot**__", reply_markup=InlineKeyboardMarkup(button), disable_web_page_preview=True)
+    await message.reply_text(text="**__Hello Iam Auto Approve Join Request Bot 
+I can:
+• Auto approve new join requests In Channels And Groups.**__", reply_markup=InlineKeyboardMarkup(button), disable_web_page_preview=True)
 
 @pr0fess0r_99.on_chat_join_request(filters.chat(CHAT_ID))
 async def autoapprove(client: pr0fess0r_99, message: ChatJoinRequest):
