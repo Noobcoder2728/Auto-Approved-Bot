@@ -23,7 +23,7 @@ async def start(client: pr0fess0r_99, message: Message):
       ]]
     await message.reply_text(text="**__Hello Iam Auto Approve Join Request Bot**__", reply_markup=InlineKeyboardMarkup(button), disable_web_page_preview=True)
 
-I can:
+I can,
 • Auto approve new join requests In Channels And Groups.**__", reply_markup=InlineKeyboardMarkup(button), disable_web_page_preview=True)
 
 @pr0fess0r_99.on_chat_join_request(filters.chat(CHAT_ID))
